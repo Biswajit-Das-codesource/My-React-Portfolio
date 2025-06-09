@@ -131,43 +131,7 @@ const ScrollToTop = ({ scrollableRef }) => {
 
     return (
         <>
-            <ComponentStyles />
-            <motion.div
-                initial={{ opacity: 0, y: 50, pointerEvents: 'none' }}
-                animate={visible ? { opacity: 1, y: 0, pointerEvents: 'auto' } : { opacity: 0, y: 50, pointerEvents: 'none' }}
-                transition={{ duration: 0.3 }}
-                onClick={scrollToTop}
-                className="s-t-t-button"
-                title="Scroll to top"
-            >
-                <p className="s-t-t-button__text">
-                    <span style={{ '--index': 0 }}>P</span>
-                    <span style={{ '--index': 1 }}>O</span>
-                    <span style={{ '--index': 2 }}>R</span>
-                    <span style={{ '--index': 3 }}>T</span>
-                    <span style={{ '--index': 4 }}>F</span>
-                    <span style={{ '--index': 5 }}>O</span>
-                    <span style={{ '--index': 6 }}>L</span>
-                    <span style={{ '--index': 7 }}>I</span>
-                    <span style={{ '--index': 8 }}>O</span>
-                    <span style={{ '--index': 9 }}></span>
-                    <span style={{ '--index': 10 }}> </span>
-                    <span style={{ '--index': 11 }}>M</span>
-                    <span style={{ '--index': 12 }}>O</span>
-                    <span style={{ '--index': 13 }}>H</span>
-                    <span style={{ '--index': 14 }}>A</span>
-                    <span style={{ '--index': 15 }}>N</span>
-                    <span style={{ '--index': 16 }}></span>
-                </p>
-                <div className="s-t-t-button__circle">
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="s-t-t-button__icon" width={20} height={20}>
-                        <path d="M12 5L12 19M12 5L7 10M12 5L17 10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="s-t-t-button__icon s-t-t-button__icon--copy" width={20} height={20}>
-                        <path d="M12 5L12 19M12 5L7 10M12 5L17 10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                </div>
-            </motion.div>
+       
         </>
     );
 };
